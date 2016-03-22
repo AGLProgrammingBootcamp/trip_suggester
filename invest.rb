@@ -14,7 +14,7 @@ class GameMain
     attr_accessor :cash, :act_record, :stk, :bnd, :dbt, :lbr
     
     def initialize(usr_name, length_of_game, initial_cash)
-    #game settings
+    #game setting
         @usr_name = usr_name
         @month_final = length_of_game       #最終月は length_of_game ヶ月目
         @month_count = 1
