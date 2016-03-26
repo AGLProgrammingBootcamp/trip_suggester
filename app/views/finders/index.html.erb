@@ -3,8 +3,8 @@
 
 <h1>Input your budget for entire trip...</h1>
 <%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
-  <p><%= text_field_tag :input_bgt, '', { :size => 25 } %></p>
-  <p><%= text_field_tag :depaeture_place, '', { :size => 25 } %></p>
+  <p>予算<%= text_field_tag :input_bgt, '', { :size => 25 } %>円</p>
+  <p>出発地<%= text_field_tag :deperture_place, '', { :size => 25 } %></p>
 <%= submit_tag '　set parameters　' %>
 <% end %>
 
