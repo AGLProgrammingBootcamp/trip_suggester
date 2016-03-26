@@ -1,7 +1,14 @@
-<h1>宿泊施設</h1>
-<%=@suggestions%>
+<h1>検索結果</h1>
+
+<h2>候補一覧</h2>
 <%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare| %>
-  <div >
+
+  <% if @bgt < sampleratefrom.inner_text.to_i + fare.to_i %>
+  <div class="hdn">
+  <% else %>
+  <div>
+  <% end %>
+  
     <span><%= name.inner_text %></span></br>
     <a>住所：<%= address.inner_text%></a></br>
     <image src="<%= pictureurl.inner_text%>"></image>
@@ -11,3 +18,6 @@
     <a  href="<%= detail.inner_text%>">詳細情報</a></br>
   </div>
 <% end %>
+
+<h2>[Dev]取得したhashテーブル</h2>
+<%=@suggestions%>

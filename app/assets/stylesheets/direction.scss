@@ -1,3 +1,35 @@
-// Place all the styles related to the direction controller here.
+// Place all the styles related to the Finders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    color:   #222;
+    background-color:  #ddd;
+}
+
+h1{
+    color:   #fff;
+    background-color:  #006;
+    margin-top:    15px;
+    margin-bottom: 15px;
+    margin-left:   0px;
+    margin-right:  200px;
+    padding: 15px;
+    
+}
+
+h2{
+    color:   #fff;
+    background-color:  #66c;
+    margin-top:    15px;
+    margin-bottom: 15px;
+    margin-left:   0px;
+    margin-right:  500px;
+    padding: 15px;
+    
+}
+
+.hdn{
+    //display:  none;
+    background-color: #ccc;
+}

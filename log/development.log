@@ -10433,3 +10433,595 @@ Processing by DirectionController#hotels as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
   Rendered direction/hotels.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 9510ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:03:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5964ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_i' for #<Nokogiri::XML::NodeSet:0x007f3c8cfea338>
+Did you mean?  to_h
+               to_s
+               to_a):
+  app/controllers/direction_controller.rb:113:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (144.4ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:05:36 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5735ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_i' for #<Nokogiri::XML::NodeSet:0x007f3c817c57a8>
+Did you mean?  to_h
+               to_s
+               to_a):
+  app/controllers/direction_controller.rb:112:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (126.6ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:09:09 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 6879ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_i' for #<Nokogiri::XML::NodeSet:0x007f3c82483698>
+Did you mean?  to_h
+               to_s
+               to_a):
+  app/controllers/direction_controller.rb:112:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (28.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.3ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:09:46 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5053ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `inner_text' for "16380":String):
+  app/controllers/direction_controller.rb:112:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.4ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:10:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5545ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_i' for #<Nokogiri::XML::NodeSet:0x007f3c80d041e8>
+Did you mean?  to_h
+               to_s
+               to_a):
+  app/controllers/direction_controller.rb:112:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:11:43 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5275ms (ActiveRecord: 0.0ms)
+
+ArgumentError (comparison of String with -87968100 failed):
+  app/controllers/direction_controller.rb:112:in `>'
+  app/controllers/direction_controller.rb:112:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:12:14 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5167ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `<<' for nil:NilClass):
+  app/controllers/direction_controller.rb:113:in `block in hotels'
+  app/controllers/direction_controller.rb:83:in `each'
+  app/controllers/direction_controller.rb:83:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.5ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:12:49 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 9426ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `inner_text' for "true":String):
+    2: <%=@suggestions%>
+    3: <%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares,@bgt_over).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare,over| %>
+    4: 
+    5:   <% if over.inner_text == "true"%>
+    6:   <div>
+    7:   <% else %>
+    8:   <div class="hdn">
+  app/views/direction/hotels.html.erb:5:in `block in _app_views_direction_hotels_html_erb__3618032489724445658_69949022539260'
+  app/views/direction/hotels.html.erb:3:in `each'
+  app/views/direction/hotels.html.erb:3:in `_app_views_direction_hotels_html_erb__3618032489724445658_69949022539260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.4ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:13:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9879ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-6b9676f49b8bc90f62e85d440b7859d8138658c905f579c2aff2819f4ff651c5.css?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 15:13:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:14:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"40000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9514ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-6b9676f49b8bc90f62e85d440b7859d8138658c905f579c2aff2819f4ff651c5.css?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:14:32 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:18:37 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32127ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:21:45 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28299ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-6b9676f49b8bc90f62e85d440b7859d8138658c905f579c2aff2819f4ff651c5.css?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:13 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:14 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:14 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 15:22:14 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:24:43 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 5636ms (ActiveRecord: 0.0ms)
+
+TypeError (String can't be coerced into Fixnum):
+  app/controllers/direction_controller.rb:113:in `-'
+  app/controllers/direction_controller.rb:113:in `block in hotels'
+  app/controllers/direction_controller.rb:84:in `each'
+  app/controllers/direction_controller.rb:84:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.7ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:32:57 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+Completed 500 Internal Server Error in 17253ms (ActiveRecord: 0.0ms)
+
+Mechanize::ResponseCodeError (500 => Net::HTTPInternalServerError for http://www.geocoding.jp/api/?v=1.1&q=%E5%A4%A7%E9%98%AA -- unhandled response):
+  app/controllers/direction_controller.rb:88:in `block in hotels'
+  app/controllers/direction_controller.rb:84:in `each'
+  app/controllers/direction_controller.rb:84:in `hotels'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.5ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:33:29 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 27755ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (String can't be coerced into Fixnum):
+    3: <h2>候補一覧</h2>
+    4: <%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares,@bgt_over).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare,over| %>
+    5: 
+    6:   <% if @bgt < sampleratefrom.inner_text.to_i + fare%>
+    7:   <div class="hdn">
+    8:   <% else %>
+    9:   <div>
+  app/views/direction/hotels.html.erb:6:in `+'
+  app/views/direction/hotels.html.erb:6:in `block in _app_views_direction_hotels_html_erb__3618032489724445658_69948917039200'
+  app/views/direction/hotels.html.erb:4:in `each'
+  app/views/direction/hotels.html.erb:4:in `_app_views_direction_hotels_html_erb__3618032489724445658_69948917039200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.3ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:34:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28846ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:37:49 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 28607ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong argument type NilClass (must respond to :each)):
+    1: <h1>宿泊施設</h1>
+    2: 
+    3: <h2>候補一覧</h2>
+    4: <%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares,@bgt_over).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare,over| %>
+    5: 
+    6:   <% if @bgt < sampleratefrom.inner_text.to_i + fare.to_i%>
+    7:   <div class="hdn">
+  app/views/direction/hotels.html.erb:4:in `zip'
+  app/views/direction/hotels.html.erb:4:in `_app_views_direction_hotels_html_erb__3618032489724445658_69948930054100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.7ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:38:45 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (63.7ms)
+Completed 500 Internal Server Error in 28099ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `over' for #<#<Class:0x007f3c817ebea8>:0x007f3c815b6750>):
+    15:     <a  >参考価格:<%=sampleratefrom.inner_text%>円</a>
+    16:     <a  >最寄り駅:<%=arr%></a>
+    17:     <a  >移動費:<%=fare%></a>
+    18:     <a  >予算の範囲内:<%=over%></a>
+    19:     <a  href="<%= detail.inner_text%>">詳細情報</a></br>
+    20:   </div>
+    21: <% end %>
+  app/views/direction/hotels.html.erb:18:in `block in _app_views_direction_hotels_html_erb__3618032489724445658_69948922505360'
+  app/views/direction/hotels.html.erb:4:in `each'
+  app/views/direction/hotels.html.erb:4:in `_app_views_direction_hotels_html_erb__3618032489724445658_69948922505360'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.6ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:39:52 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8wmT+7NoS+jjBky7XpunbDRJf7As0RVVBMEoueOXF841m3a0xKrcpFM+T/L9G/o6bz7EadmQpkO+MXxYINipQ==", "bgt"=>"30000", "dept"=>"大阪"}
+  Rendered direction/hotels.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29908ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-6b9676f49b8bc90f62e85d440b7859d8138658c905f579c2aff2819f4ff651c5.css?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 15:40:22 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 113.43.112.90 at 2016-03-26 15:51:26 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DirectionController#start as HTML
+  Rendered direction/start.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 412ms (Views: 395.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-6b9676f49b8bc90f62e85d440b7859d8138658c905f579c2aff2819f4ff651c5.css?body=1" for 113.43.112.90 at 2016-03-26 15:51:27 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 15:51:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:51:53 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"60000", "dept"=>"北府中"}
+  Rendered direction/hotels.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27580ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 15:52:53 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"30000", "dept"=>"北府中"}
+  Rendered direction/hotels.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26285ms (Views: 28.7ms | ActiveRecord: 0.0ms)

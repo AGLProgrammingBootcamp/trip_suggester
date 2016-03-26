@@ -2,7 +2,6 @@ Suggestions = Struct.new(:hotel_name,:address, :prefcode, :hotel_sample_fare, :s
 class DirectionController < ApplicationController
 require 'mechanize'
 
-
   def search
     @address_dep=params[:adress_dep]
     agent1 = Mechanize.new
@@ -65,7 +64,7 @@ require 'mechanize'
     @min_rate="8000"
     # // http://www.jalan.net/jalan/doc/jws/data/area.html area-code
     agent = Mechanize.new
-    @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=2&xml_ptn=1"
+    @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=6&xml_ptn=1"
     page = agent.get(@url)
     @elements = page
 
@@ -78,7 +77,6 @@ require 'mechanize'
 
     @move_fares=Array.new()
     @arrive=Array.new()
-
 
     @hotel_name.zip(@hotel_address,@hotel_sampleratefrom).each do|name,address,sampleratefrom|
       #地名から緯度・経度を検索
@@ -107,8 +105,8 @@ require 'mechanize'
         agent = Mechanize.new
         page = agent.get("http://transit.yahoo.co.jp/search/result?flatlon=&from="+@dep+"&tlatlon=&to="+@arr+"&via=&via=&via=&y=2016&m=03&d=25&hh=16&m2=4&m1=3&type=1&ticket=ic&al=1&shin=1&ex=1&hb=1&lb=1&sr=1&s=0&expkind=1&ws=2")
         @elements = page.search('ul li li.fare')
-        @move_fares <<  @elements[0].inner_text.delete("円").delete(",")
-        else
+        @move_fares << @elements[0].inner_text.delete("円").delete(",")
+      else
         @arrive << "unknown"
         @move_fares << "unknown"
       end

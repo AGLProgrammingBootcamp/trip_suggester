@@ -1,0 +1,17 @@
+<h1>Trip Suggestor -別府温泉編- v0.3</h1>
+<h2>これはなに?</h2>
+<p>ツアーで決められたルートではなく，自分で気ままにどこかに出かけたい．</p>
+<p>そのためには，やることがたくさん．</p>
+<p>行き先を決め，宿を調べ，交通費を調べ，案外高くつくことに悩み…</p>
+<p>宿を変えたり，行き先を変えてみたりして，時間ばかりかかります．</p>
+<br>
+<p>Trip Suggestorなら，予算と現在地を入れるだけ．</p>
+<p>あなたの素敵な別府温泉での1泊を予算範囲内で提案します．</p>
+
+<h2>さあ，入力してみましょう！</h2>
+<%= form_tag direction_hotels_path do %>
+  予算総額<input type="text" class="" name="bgt"></br>
+  出発地<input type="text" class="" name="dept"></br>
+  <input type="submit" value="ok" class="">
+<% end %>
+
