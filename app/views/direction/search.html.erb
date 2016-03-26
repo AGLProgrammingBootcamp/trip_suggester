@@ -1,0 +1,20 @@
+<h1> <%= @adress_dep %>と<%= @adress_arr %>への経路と費用</h1>
+
+<%= @lat1 %></br>
+<%= @lng1 %></br>
+<%= @lat2 %></br>
+<%= @lng2 %></br>
+<%= @elements1 %></br>
+<%= @elements2 %></br>
+
+<%= form_tag direction_new_path do %>
+   出発地の緯度
+   <input type="text" class="" value="<%= @lat1%>" name="lat1"></br>
+   出発地の経度
+   <input type="text" class="" value="<%= @lng1%>" name="lng1"></br>
+   行き先の緯度
+   <input type="text" class="" value="<%= @lat2%>" name="lat2"></br>
+   行き先の経度
+   <input type="text" class="" value="<%= @lng2%>" name="lng2"></br>
+  <input type="submit" value="ok" class="">
+<% end %>
