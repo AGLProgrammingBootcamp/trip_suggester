@@ -4,11 +4,7 @@
 <h1>trip suggestor v0.1</h1>
 <%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
   <p>予算<%= text_field_tag :input_bgt, '', { :size => 25 } %>円</p>
-<<<<<<< HEAD
-  <p>出発駅<%= text_field_tag :deperture_place, '', { :size => 25 } %駅</p>
-=======
   <p>出発駅<%= text_field_tag :deperture_place, '', { :size => 25 } %>駅</p>
->>>>>>> fa0e315676f4f20d3d54872bcc8f424239575595
 <%= submit_tag '　set parameters　' %>
 <% end %>
 
