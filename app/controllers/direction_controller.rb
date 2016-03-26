@@ -57,11 +57,11 @@ require 'mechanize'
     @api_key="leo153b0553fb1"
     @s_area="440502" #別府
     @bgt="1000000"
-    @max_rate="40000"
-    @min_rate="20000"
+    @max_rate="50000"
+    @min_rate="10000"
     # // http://www.jalan.net/jalan/doc/jws/data/area.html area-code
     agent = Mechanize.new
-    @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=4&xml_ptn=1"
+    @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=10&xml_ptn=1"
     page = agent.get(@url)
     @elements = page
     @hotel_name = page.search('HotelName')
@@ -94,27 +94,30 @@ require 'mechanize'
             agent2 = Mechanize.new
             @address_app=address.inner_text
             page2 = agent2.get("http://www.geocoding.jp/api/?v=1.1&q="+@address_app)
-            @lat2=page2.search('lat').inner_text
-            @lng2=page2.search('lng').inner_text
 
-            #緯度経度から最寄り駅を検索
-            agent1 = Mechanize.new
-            page1 = agent1.get("http://map.simpleapi.net/stationapi?x="+@lng1+"&y="+@lat1)
-            @dep = page1.at('station name').inner_text
+            if page2.search('error').inner_text!="003"
+                @lat2=page2.search('lat').inner_text
+                @lng2=page2.search('lng').inner_text
 
-            agent4 = Mechanize.new
-            page2 = agent4.get("http://map.simpleapi.net/stationapi?x="+@lng2+"&y="+@lat2)
-            if page2.at('station name').inner_text==nil
-              @arrive << "unknown"
-              @move_fares << "unknown"
+                #緯度経度から最寄り駅を検索
+                agent1 = Mechanize.new
+                page1 = agent1.get("http://map.simpleapi.net/stationapi?x="+@lng1+"&y="+@lat1)
+                @dep = page1.at('station name').inner_text
+
+                agent4 = Mechanize.new
+                page2 = agent4.get("http://map.simpleapi.net/stationapi?x="+@lng2+"&y="+@lat2)
+
+                @arr = page2.at('station name').inner_text
+
+                @arrive << @arr
+                 #最寄り駅から費用を計算
+                agent = Mechanize.new
+                page = agent.get("http://transit.yahoo.co.jp/search/result?flatlon=&from="+@dep+"&tlatlon=&to="+@arr+"&via=&via=&via=&y=2016&m=03&d=25&hh=16&m2=4&m1=3&type=1&ticket=ic&al=1&shin=1&ex=1&hb=1&lb=1&sr=1&s=0&expkind=1&ws=2")
+                @elements = page.search('ul li li.fare')
+                @move_fares << @elements[0].inner_text
             else
-              @arr = page2.at('station name').inner_text
-              @arrive << @arr
-               #最寄り駅から費用を計算
-              agent = Mechanize.new
-              page = agent.get("http://transit.yahoo.co.jp/search/result?flatlon=&from="+@dep+"&tlatlon=&to="+@arr+"&via=&via=&via=&y=2016&m=03&d=25&hh=16&m2=4&m1=3&type=1&ticket=ic&al=1&shin=1&ex=1&hb=1&lb=1&sr=1&s=0&expkind=1&ws=2")
-              @elements = page.search('ul li li.fare')
-              @move_fares << @elements[0].inner_text
+                @arrive << "unknown"
+                @move_fares << "unknown"
             end
     end
 

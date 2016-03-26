@@ -1,5 +1,5 @@
 <h1>宿泊施設</h1>
-<%=@suggestions%>
+<%=@elements%>
 <%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare| %>
   <div >
     <span><%= name.inner_text %></span></br>
