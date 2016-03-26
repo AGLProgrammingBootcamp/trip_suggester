@@ -7,14 +7,14 @@ class FindersController < ApplicationController
   def index
     @finders = Finder.all
 
-    @input_bgt =    params[:input_bgt].to_i
-    @bgt_hotel =    (@input_bgt * 0.7).ceil
+    @input_bgt    = params[:input_bgt].to_i
+    @bgt_hotel    = (@input_bgt * 0.7).ceil
     @bgt_hotel_up = (@bgt_hotel * 1.1).ceil
     @bgt_hotel_lw = (@bgt_hotel * 0.8).ceil
     
-    @ons_matched = Finder.where(hotel_sample_fare: @bgt_hotel_lw..@bgt_hotel_up)
+    @ons_matched  = Finder.where(hotel_sample_fare: @bgt_hotel_lw..@bgt_hotel_up)
     
-    
+    @input_dept   = params[:deperture_place]
 
   end
   # GET /finders/1

@@ -2,7 +2,7 @@
 
 
 <h1>Input your budget for entire trip...</h1>
-<%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
+<%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'bgt' }) do %>
   <p><%= text_field_tag :input_bgt, '', { :size => 25 } %></p>
 <%= submit_tag '　set budget　' %>
 <% end %>
@@ -13,6 +13,21 @@
 <p>Budget for onsen/hotel : <%= @bgt_hotel_lw%> ~ <%=@bgt_hotel_up%>円</p>
 <br>
 <p>Onsens matched: <%= @ons_matched %></p>
+
+<br><br>
+
+<h2>Trip path finding process</h2>
+<%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'dept' }) do %>
+  <p><%= text_field_tag :deperture_place, '', { :size => 25 } %></p>
+<%= submit_tag '　set deperture_place' %>
+
+<br><br>
+
+<p>Place you depart : <%= @input_dept%> </p>
+<p>Place you arrive : 別府</p>
+
+<br><br>
+
 <br><br><br><br>
 
 
