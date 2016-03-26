@@ -1,0 +1,33 @@
+<h1>Manual Onsen input</h1>
+
+<p>Onsen data structure</p>
+<table>
+    <tr><td>key</td><td>value type</td></tr>
+    <tr><td>hotel_id</td><td>integer</td></tr>
+    <tr><td>hotel_name</td><td>string</td></tr>
+    <tr><td>postcode</td><td>string</td></tr>
+    <tr><td>hotel_address</td><td>string</td></tr>
+    <tr><td>hotel_pict</td><td>string(URL)</td></tr>
+    <tr><td>hotel_sample_fare</td><td>integer</td></tr>
+    <tr><td>onsen_name</td><td>string</td></tr>
+</table>
+
+
+<%= form_for @onsen do |f| %>
+
+<p>
+    <%= f.label :hotel_id          %> <%= f.text_field :hotel_id %><br>
+    <%= f.label :hotel_name        %> <%= f.text_field :hotel_name %> <br>
+    <%= f.label :postcode          %> <%= f.text_field :postcode %> <br>
+    <%= f.label :hotel_address     %> <%= f.text_field :hotel_address %> <br>
+    <%= f.label :hotel_pict        %> <%= f.text_field :hotel_pict %> <br>
+    <%= f.label :hotel_sample_fare %> <%= f.text_field :hotel_sample_fare %> <br>
+    <%= f.label :onsen_name        %> <%= f.text_field :onsen_name %> <br>
+</p>
+
+<p>
+    <%= f.submit %>
+    
+</p>
+
+<% end %>

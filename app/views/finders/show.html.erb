@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hotel:</strong>
+  <%= @finder.hotel_id %>
+</p>
+
+<p>
+  <strong>Hotel name:</strong>
+  <%= @finder.hotel_name %>
+</p>
+
+<p>
+  <strong>Hotel sample fare:</strong>
+  <%= @finder.hotel_sample_fare %>
+</p>
+
+<p>
+  <strong>Onsen name:</strong>
+  <%= @finder.onsen_name %>
+</p>
+
+<%= link_to 'Edit', edit_finder_path(@finder) %> |
+<%= link_to 'Back', finders_path %>

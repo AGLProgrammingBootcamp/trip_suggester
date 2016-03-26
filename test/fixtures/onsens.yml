@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hotel_id: 1
+  hotel_name: MyString
+  postcode: MyString
+  hotel_address: MyString
+  hotel_pict: MyString
+  hotel_sample_fare: 1
+  onsen_name: MyString
+
+two:
+  hotel_id: 1
+  hotel_name: MyString
+  postcode: MyString
+  hotel_address: MyString
+  hotel_pict: MyString
+  hotel_sample_fare: 1
+  onsen_name: MyString

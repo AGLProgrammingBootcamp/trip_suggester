@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>onsen getter</title>
+</head>
+<body>
+
+<h1>ONSEN GETTER</h1>
+
+	<form method="post" action="http://jws.jalan.net/APICommon/OnsenSearch/V1/">
+
+		<input type="hidden" id="key" name="apikey" value="****" />
+		<div>
+			<select id="pref" name="都道府県コード">
+				<option value="001000">北海道</option>
+				<option value="002000">青森県</option>
+				<option value="003000">岩手県</option>
+				<option value="004000">宮城県</option>
+				<option value="005000">秋田県</option>
+				<option value="006000">青森県</option>
+			</select>
+		</div>
+		<div>
+			滞在日数:<input type="text" id="stay_count" name="stays" value="" />
+		</div>
+		<input type="hidden" id="room_count" name="部屋数" value="1" />
+		<div>
+			予算下限:<input type="text" id="min_rate" name="min" value="" />
+			** 1~1,000,000,000まで		
+		</div>
+		<div>
+			予算上限:<input type="text" id="max_rate" name="max" value="" />
+			** 1~1,000,000,000まで		
+		</div>
+		
+		
+		<input type="submit" value="送信" />
+
+	</form>
+
+</body>
+</html>
