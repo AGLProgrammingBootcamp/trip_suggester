@@ -1,0 +1,8 @@
+<h1>出発地と行き先を入力する</h1>
+<%=  @hotel_name%>
+<%  [@hotel_name,@hotel_addres,@hotel_detail,@hotel_pictureurl].each do|name,address,detail,pictureurl| %>
+  <p><%= name%></p>
+  <p><%= address%></p>
+  <p><%= detail%></p>
+  <p><%= pictureurl%></p>
+<% end %>

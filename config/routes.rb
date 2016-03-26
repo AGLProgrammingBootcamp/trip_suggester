@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
 
+  root 'direction#create'
+
+  get '/direction/hotels' => 'direction#hotels'
+  
+
+  post '/direction/new' => 'direction#new'
   get '/direction/new' => 'direction#new'
+  
+  
   post '/direction/show' => 'direction#show'
+  
+  get '/direction/create' => 'direction#create'
+  
+  post '/direction/search' => 'direction#search'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
