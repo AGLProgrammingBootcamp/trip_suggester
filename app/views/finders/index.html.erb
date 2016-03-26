@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1>Input your budget for entire trip...</h1>
+<%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
+  <p><%= text_field_tag :input_bgt, '', { :size => 25 } %></p>
+<%= submit_tag '　set budget　' %>
+<% end %>
+
+<br><br>
+
+<p>Budget you put : <%= @input_bgt%>円 </p>
+<p>Budget for onsen/hotel : <%= @bgt_hotel_lw%> ~ <%=@bgt_hotel_up%>円</p>
+<br>
+<p>Onsens matched: <%= @ons_matched %></p>
+<br><br><br><br>
+
+
+<h1>Listing Finders' targets</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Hotel</th>
+      <th>Hotel name</th>
+      <th>Hotel sample fare</th>
+      <th>Onsen name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @finders.each do |finder| %>
+      <tr>
+        <td><%= finder.hotel_id %></td>
+        <td><%= finder.hotel_name %></td>
+        <td><%= finder.hotel_sample_fare %></td>
+        <td><%= finder.onsen_name %></td>
+        <td><%= link_to 'Show', finder %></td>
+        <td><%= link_to 'Edit', edit_finder_path(finder) %></td>
+        <td><%= link_to 'Destroy', finder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Finder', new_finder_path %>

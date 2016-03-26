@@ -1,0 +1,33 @@
+<%= form_for(@finder) do |f| %>
+  <% if @finder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@finder.errors.count, "error") %> prohibited this finder from being saved:</h2>
+
+      <ul>
+      <% @finder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hotel_id %><br>
+    <%= f.number_field :hotel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hotel_name %><br>
+    <%= f.text_field :hotel_name %>
+  </div>
+  <div class="field">
+    <%= f.label :hotel_sample_fare %><br>
+    <%= f.number_field :hotel_sample_fare %>
+  </div>
+  <div class="field">
+    <%= f.label :onsen_name %><br>
+    <%= f.text_field :onsen_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
