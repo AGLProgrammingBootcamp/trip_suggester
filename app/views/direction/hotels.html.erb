@@ -1,11 +1,13 @@
-<h1>出発地と行き先を入力する</h1>
-<%=  @url%></br>
-<%=  @hotel_sampleratefrom.to_s%></br>
-<%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom).each do|name,address,detail,pictureurl,sampleratefrom| %>
+<h1>宿泊施設</h1>
+<%=@suggestions%>
+<%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare| %>
   <div >
-    <span><%= name.inner_text %></span>
-    <p><%= address.inner_text%></p></br>
+    <span><%= name.inner_text %></span></br>
+    <a>住所：<%= address.inner_text%></a></br>
     <image src="<%= pictureurl.inner_text%>"></image>
+    <a  >参考価格:<%=sampleratefrom.inner_text%>円</a>
+    <a  >最寄り駅:<%=arr%></a>
+    <a  >移動費:<%=fare%></a>
     <a  href="<%= detail.inner_text%>">詳細情報</a></br>
   </div>
 <% end %>

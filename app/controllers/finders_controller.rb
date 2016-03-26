@@ -1,5 +1,5 @@
 #suggest structure
-#Suggestions = Struct.new(:hotel_name,:address, :prefcode, :hotel_sample_fare, :sta_arrival, :trans_fare)
+Suggestions = Struct.new(:hotel_name,:address, :prefcode, :hotel_sample_fare, :sta_arrival, :trans_fare)
 
 #main app controller
 class FindersController < ApplicationController
