@@ -1,4 +1,5 @@
 class DirectionController < ApplicationController
+require 'mechanize'
 
   def search
     @address_dep=params[:adress_dep]
@@ -53,16 +54,26 @@ class DirectionController < ApplicationController
   def hotels
     @api_key="leo153b0553fb1"
     @s_area="440502" #別府
+    @max_rate="20000"
+    @min_rate="10000"
     # // http://www.jalan.net/jalan/doc/jws/data/area.html area-code
     agent = Mechanize.new
-    page = agent.get("http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area)
+    @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate
+    page = agent.get(@url)
     @elements = page
-    @hotel_name = page.search('HotelName').inner_text
-    @hotel_addres = page.search('HotelID HotelAddress').inner_text
-    @hotel_detail = page.search('HotelDetailURL').inner_text
-    @hotel_pictureurl = page.search('PictureURL').inner_text
-    # @fare = @elements[0].inner_text
-    # @elements = page.search('dl dt a')
+    @hotel_name = page.search('HotelName')
+
+
+    @hotel_address = page.search('HotelAddress')
+
+
+    @hotel_detail = page.search('HotelDetailURL')
+
+
+    @hotel_pictureurl = page.search('PictureURL')
+
+    @hotel_sampleratefrom = page.search('SampleRateFrom.text')
+
   end
 
 end
