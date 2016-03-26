@@ -1,0 +1,11 @@
+<h1>出発地と行き先を入力する</h1>
+<%=  @url%></br>
+<%=  @hotel_sampleratefrom.to_s%></br>
+<%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom).each do|name,address,detail,pictureurl,sampleratefrom| %>
+  <div >
+    <span><%= name.inner_text %></span>
+    <p><%= address.inner_text%></p></br>
+    <image src="<%= pictureurl.inner_text%>"></image>
+    <a  href="<%= detail.inner_text%>">詳細情報</a></br>
+  </div>
+<% end %>
