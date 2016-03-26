@@ -12,7 +12,9 @@ class FindersController < ApplicationController
     @bgt_hotel_up = (@bgt_hotel * 1.1).ceil
     @bgt_hotel_lw = (@bgt_hotel * 0.8).ceil
     
-    @ons_matched = Finder.where(hotel_sample_fare: @bgt_hotel_lw..@bgt_hotel_up).explain
+    @ons_matched = Finder.where(hotel_sample_fare: @bgt_hotel_lw..@bgt_hotel_up)
+    
+    
 
   end
   # GET /finders/1
