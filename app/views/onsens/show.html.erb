@@ -1,0 +1,7 @@
+<h2>Onsen detail</h2>
+
+<ul></ul>
+    <% @onsens.each do |onsen| %>
+    <li>HotelID: <%= link_to onsen.hotel_id, onsen_path(onsen.hotel_id) %>, ホテル名: <%= onsen.hotel_name %>, 温泉名:  <%= onsen.onsen_name %> </li>
+    <% end %>
+</ul>
