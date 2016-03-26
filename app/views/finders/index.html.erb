@@ -4,15 +4,45 @@
 <h1>Input your budget for entire trip...</h1>
 <%= form_tag({ :controller => 'finders', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
   <p>予算<%= text_field_tag :input_bgt, '', { :size => 25 } %>円</p>
-  <p>出発地<%= text_field_tag :deperture_place, '', { :size => 25 } %></p>
+  <p>出発駅<%= text_field_tag :deperture_place, '', { :size => 25 } %駅</p>
 <%= submit_tag '　set parameters　' %>
 <% end %>
 
 <br><br>
+<p>Budget you put : <%= @input_bgt %> </p>
+<p>Budget for onsen/hotel : <%= @bgt_hotel_inf %> ~ <%= @bgt_hotel_sup %></p>
 
-<p>Budget you put : <%= @input_bgt%>円 </p>
-<p>Budget for onsen/hotel : <%= @bgt_hotel_lw%> ~ <%=@bgt_hotel_up%>円</p>
-<br>
+<br><br>
+
+
+<h2>Results</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Hotel name</th>
+      <th>Hotel address</th>
+      <th>Pref. code</th>
+      <th>Sample fare of Hotel</th>
+      <th>Arrival Station</th>
+      <th>Fare of Transportation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @suggestions.each do |sggs| %>
+      <tr>
+        <td><%= sggs.hotel_name %></td>
+        <td><%= sggs.address %></td>
+        <td><%= sggs.prefcode %></td>
+        <td><%= sggs.hotel_sample_fare %></td>
+        <td><%= sggs.sta_arrival %></td>
+        <td><%= sggs.trans_fare %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+
 <p>Onsens matched:</p>
 <% @ons_matched.each do |onsen| %>
   <%=onsen.hotel_name %>
@@ -24,12 +54,15 @@
 <h2>Trip path finding process</h2>
 <br><br>
 
-<p>Place you depart : <%= @input_dept%> </p>
-<p>Place you arrive : 別府</p>
+<p>Place you depart : <%= @deperture_place%>駅 </p>
+<p>Place you arrive : 別府駅</p>
 
 <br><br>
 
 <br><br><br><br>
+
+
+
 
 
 <h1>Listing Finders' targets</h1>
