@@ -11025,3 +11025,171 @@ Processing by DirectionController#hotels as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"30000", "dept"=>"北府中"}
   Rendered direction/hotels.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 26285ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 16:19:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"30000", "dept"=>"北府中"}
+  Rendered direction/hotels.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27165ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-0b366de21ed2a53cb87e1cadbcfdd2b49f38c35bac977ef979bdd727b9d8930c.css?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 16:19:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 16:20:28 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"30000", "dept"=>"北府中"}
+  Rendered direction/hotels.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26835ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-0b366de21ed2a53cb87e1cadbcfdd2b49f38c35bac977ef979bdd727b9d8930c.css?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 16:20:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/direction/hotels" for 113.43.112.90 at 2016-03-26 16:26:55 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectionController#hotels as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVbtSW60GUhw/Xifezio/xV1BxZ8EpI+ueQwGuDi0/1uTKbcU2sTFUI9mJJdtqmKTBjZ+RvHlPLjD/FJZ+/tBw==", "bgt"=>"30000", "dept"=>"北府中"}
+  Rendered direction/hotels.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26138ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/direction.self-5dc148fb7ab80203ede1fcaf2397dfb5a5910cefd609699cb51adf8a57e5d272.css?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-4652926d372cae2bb18cd45619a13ba5d1271a260c9fb28ebf7e8e2de7188776.css?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/direction.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 16:27:21 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

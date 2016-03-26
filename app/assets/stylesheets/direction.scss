@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-    color:   #222;
-    background-color:  #ddd;
+    color:   #333;
+    background-color:  #ccc;
 }
 
 h1{
@@ -29,7 +29,30 @@ h2{
     
 }
 
+
+h3{
+    color:   #333;
+    background-color: #fff;
+    border:  outset 5px #ccc;
+    width:   300px;
+    margin-bottom: 15px;
+    margin-left:   0px;
+    padding: 5px;
+    
+}
+
 .hdn{
     //display:  none;
     background-color: #ccc;
+}
+
+ul.todo{
+    color: #339;
+    font-weight: bold;
+}
+
+span.todo{
+    color: #0aa;
+    font-style: italic;
+    font-weight: bold;
 }
