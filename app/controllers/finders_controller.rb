@@ -1,12 +1,20 @@
 class FindersController < ApplicationController
   before_action :set_finder, only: [:show, :edit, :update, :destroy]
 
+  attr_accessor :ons_matched
   # GET /finders
   # GET /finders.json
   def index
     @finders = Finder.all
-  end
 
+    @input_bgt =    params[:input_bgt].to_i
+    @bgt_hotel =    (@input_bgt * 0.7).ceil
+    @bgt_hotel_up = (@bgt_hotel * 1.1).ceil
+    @bgt_hotel_lw = (@bgt_hotel * 0.8).ceil
+    
+    @ons_matched = "none"
+
+  end
   # GET /finders/1
   # GET /finders/1.json
   def show
@@ -72,3 +80,10 @@ class FindersController < ApplicationController
       params.require(:finder).permit(:hotel_id, :hotel_name, :hotel_sample_fare, :onsen_name)
     end
 end
+
+
+#main process
+
+
+
+
