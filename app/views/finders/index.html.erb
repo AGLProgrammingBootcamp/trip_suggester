@@ -12,7 +12,11 @@
 <p>Budget you put : <%= @input_bgt%>円 </p>
 <p>Budget for onsen/hotel : <%= @bgt_hotel_lw%> ~ <%=@bgt_hotel_up%>円</p>
 <br>
-<p>Onsens matched: <%= @ons_matched %></p>
+<p>Onsens matched:</p>
+<% @ons_matched.each do |onsen| %>
+  <%=onsen.hotel_name %>
+  <%=onsen.hotel_sample_fare %>
+<% end %>
 
 <br><br>
 
@@ -61,3 +65,5 @@
 <br>
 
 <%= link_to 'New Finder', new_finder_path %>
+
+<% end %>

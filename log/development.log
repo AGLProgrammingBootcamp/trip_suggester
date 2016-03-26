@@ -2207,3 +2207,207 @@ Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 02:32:08 +0000
 Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 113.43.112.90 at 2016-03-26 02:54:33 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FindersController#index as HTML
+  Rendered finders/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/finders/index.html.erb:23: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze;   @ons_matched do |set, i| 
+                           ^
+/home/ubuntu/workspace/app/views/finders/index.html.erb:23: syntax error, unexpected '|', expecting '='
+'.freeze;   @ons_matched do |set, i| 
+                                    ^
+/home/ubuntu/workspace/app/views/finders/index.html.erb:80: syntax error, unexpected keyword_ensure, expecting keyword_end):
+  app/views/finders/index.html.erb:23: syntax error, unexpected keyword_do, expecting keyword_end
+  app/views/finders/index.html.erb:23: syntax error, unexpected '|', expecting '='
+  app/views/finders/index.html.erb:80: syntax error, unexpected keyword_ensure, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.2ms)
+
+
+Started GET "/" for 113.43.112.90 at 2016-03-26 02:59:42 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Rendered finders/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/finders/index.html.erb:19: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.safe_append='
+                                    ^
+/home/ubuntu/workspace/app/views/finders/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/finders/index.html.erb:70: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/finders/index.html.erb:19: syntax error, unexpected keyword_end
+  app/views/finders/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/finders/index.html.erb:70: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.8ms)
+
+
+Started GET "/" for 113.43.112.90 at 2016-03-26 03:00:19 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Rendered finders/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/finders/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/finders/index.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/finders/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/finders/index.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.0ms)
+
+
+Started GET "/" for 113.43.112.90 at 2016-03-26 03:00:38 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  [1m[35mFinder Load (0.2ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 0 AND 0)
+  [1m[36mFinder Load (0.2ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 262ms (Views: 259.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/finders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 03:00:39 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/finders?utf8=%E2%9C%93&input_bgt=20000&commit=%E3%80%80set+budget%E3%80%80" for 113.43.112.90 at 2016-03-26 03:00:43 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Parameters: {"utf8"=>"✓", "input_bgt"=>"20000", "commit"=>"　set budget　"}
+  [1m[35mFinder Load (1.0ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 11200 AND 15401)
+  [1m[36mFinder Load (0.2ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/finders?utf8=%E2%9C%93&input_bgt=20000&commit=%E3%80%80set+budget%E3%80%80" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Parameters: {"utf8"=>"✓", "input_bgt"=>"20000", "commit"=>"　set budget　"}
+  [1m[35mFinder Load (0.3ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 11200 AND 15401)
+  [1m[36mFinder Load (0.8ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 128ms (Views: 125.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/finders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/onsens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 113.43.112.90 at 2016-03-26 03:01:12 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/finders?utf8=%E2%9C%93&deperture_place=%E6%9D%B1%E4%BA%AC&commit=%E3%80%80set+deperture_place" for 113.43.112.90 at 2016-03-26 03:01:27 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Parameters: {"utf8"=>"✓", "deperture_place"=>"東京", "commit"=>"　set deperture_place"}
+  [1m[35mFinder Load (0.3ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 0 AND 0)
+  [1m[36mFinder Load (0.2ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/finders?utf8=%E2%9C%93&input_bgt=100000&commit=%E3%80%80set+budget%E3%80%80" for 113.43.112.90 at 2016-03-26 03:01:36 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Parameters: {"utf8"=>"✓", "input_bgt"=>"100000", "commit"=>"　set budget　"}
+  [1m[35mFinder Load (0.3ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 56000 AND 77000)
+  [1m[36mFinder Load (0.3ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/finders?utf8=%E2%9C%93&input_bgt=20000&commit=%E3%80%80set+budget%E3%80%80" for 113.43.112.90 at 2016-03-26 03:03:05 +0000
+Cannot render console from 113.43.112.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FindersController#index as HTML
+  Parameters: {"utf8"=>"✓", "input_bgt"=>"20000", "commit"=>"　set budget　"}
+  [1m[35mFinder Load (0.5ms)[0m  SELECT "finders".* FROM "finders" WHERE ("finders"."hotel_sample_fare" BETWEEN 11200 AND 15401)
+  [1m[36mFinder Load (0.3ms)[0m  [1mSELECT "finders".* FROM "finders"[0m
+  Rendered finders/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.8ms)
