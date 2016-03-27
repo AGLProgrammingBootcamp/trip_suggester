@@ -68,8 +68,10 @@ require 'mechanize'
     @suggestions = Array.new()
     @count_sggs = 0
 
-    @areas = ["011105","020802","040205","071502","080602","080805","091102","141602","220302","380205","440502","460505"]
+#    @areas = ["011105","020802","040205","071502","080602","080805","091102","141602","220302","380205","440502","460505"]
     #先頭から，登別，十和田湖，秋保，裏磐梯，塩原，奥日光，伊香保，箱根，奥飛騨，道後，別府，指宿
+    @areas = ["220302"]
+    # NG list: 最寄り駅が見つからない??? page2 = nilClassになる　十和田湖020802, 塩原071502, 奥日光080602, 伊香保080805, 
     # // http://www.jalan.net/jalan/doc/jws/data/area.html area-code
 
    #           *****hotel fetcher*****  
@@ -77,10 +79,10 @@ require 'mechanize'
    #  (2)それぞれの宿に対し，経路価格を算定
    #  (3)配列suggestionsに構造体@hotel_name.zipをpush
    #  (4)loop (1)-(3) 4回
-#    while @count_sggs == 6
+#    until @count_sggs == 6
       @s_area=@areas.sample
       agent = Mechanize.new
-      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=6&xml_ptn=1"
+      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=1&xml_ptn=1"
       page = agent.get(@url)
       @elements = page
   
@@ -130,8 +132,9 @@ require 'mechanize'
           @suggestions.push(hotel_name:name.inner_text,address:address.inner_text, prefcode:prefecture.inner_text, hotel_sample_fare:sampleratefrom.inner_text, sta_arrival:arr, trans_fare:fare)
       end
       
-#      @count_sggs =+ 2
-#   end
+#      @count_sggs += 2
+#     puts "search in progress ....count #{@count_sggs}"
+#    end
     
   end
 
