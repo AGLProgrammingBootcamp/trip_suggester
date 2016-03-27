@@ -77,6 +77,7 @@ require 'mechanize'
 
     @move_fares=Array.new()
     @arrive=Array.new()
+    @lon_lat=Array.new()
 
     @hotel_name.zip(@hotel_address,@hotel_sampleratefrom).each do|name,address,sampleratefrom|
       #地名から緯度・経度を検索
@@ -93,6 +94,8 @@ require 'mechanize'
       if page2.search('error').inner_text!="003"
         @lat2=page2.search('lat').inner_text
         @lng2=page2.search('lng').inner_text
+
+        @lon_lat.push([@lat2.to_f,@lng2.to_f])
         #緯度経度から最寄り駅を検索
         agent1 = Mechanize.new
         page1 = agent1.get("http://map.simpleapi.net/stationapi?x="+@lng1+"&y="+@lat1)
@@ -109,6 +112,7 @@ require 'mechanize'
       else
         @arrive << "unknown"
         @move_fares << "unknown"
+        @lon_lat.push([0,0])
       end
       
     end
@@ -118,5 +122,8 @@ require 'mechanize'
         @suggestions.push(hotel_name:name.inner_text,address:address.inner_text, prefcode:prefecture.inner_text, hotel_sample_fare:sampleratefrom.inner_text, sta_arrival:arr, trans_fare:fare)
     end
   end
+
+
+
 
 end
