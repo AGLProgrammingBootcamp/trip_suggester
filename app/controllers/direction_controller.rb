@@ -49,9 +49,9 @@ require 'mechanize'
   end
 
   def start
-    @prog_0 = "hdn"
-    @prog_1 = "hdn"
-    @prog_2 = "hdn"
+    @prog_0 = "prog_hdn"
+    @prog_1 = "prog_hdn"
+    @prog_2 = "prog_hdn"
     
   end
   
@@ -113,6 +113,18 @@ require 'mechanize'
    #  (3)配列suggestionsに構造体@hotel_name.zipをpush
    #  (4)loop (1)-(3) 4回
     until @count_sggs == 6
+    
+      case @count_sggs
+      when 0
+        @prog_0 = "prog_apr"
+      when 2
+        @prog_0 = "prog_hdn"
+        @prog_1 = "prog_apr"
+      when 4
+        @prog_1 = "prog_hdn"
+        @prog_2 = "prog_apr"
+      end
+    
 #      @s_area=@areas.sample
       #hashオブジェクト @destinationのkey_ac とkey_stをランダム数列で選択・生成
       @dest_selector = @rndg.rand(1..14) +1
