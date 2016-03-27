@@ -134,20 +134,24 @@
 <style type="text/css">
 #hotel-box{
 width:800px;
-height: 200px;
+height: 220px;
 padding:20px;
+margin: 20px;
 }
 
 #hotel-image-box{
-width:200px;
-height: 180px;
+width:250px;
+height: 200px;
 float:left;
 }
 
 #hotel-lists{
 width:450px;
-height: 180px;
+height: 200px;
 float:right;
+}
+.hotel-name{
+font: 25px;
 }
 
 </style>
@@ -160,7 +164,7 @@ float:right;
   <div id="hotel-box">
   <% end %>
     <div id="hotel-image-box">
-      <image class="hotel-image" src="<%= sggs_hash[:pict_url] %>"></image>
+      <image class="hotel-image" src="<%= sggs_hash[:pict_url] %>" width="250" height="220"></image>
     </div>
     <div id="hotel-lists" >
       <span class="hotel-name"><%= sggs_hash[:hotel_name] %></span></br>
