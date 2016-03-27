@@ -7,7 +7,7 @@ gem 'sqlite3', groups: %w(test development), require: false
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 #When merge with heroku
-gem 'sqlite3', require: false
+#gem 'sqlite3', require: false
 gem 'pg', require: false
 
 # Use SCSS for stylesheets
