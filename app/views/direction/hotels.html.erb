@@ -1,30 +1,30 @@
 <h1>検索結果</h1>
 
-<h2>候補一覧</h2>
-<%  @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,pictureurl,sampleratefrom,arr,fare| %>
-
-  <% if @bgt < sampleratefrom.inner_text.to_i + fare.to_i %>
+<h2>候補一覧 from hash テーブル</h2>
+<%  @suggestions.each {|sggs_hash| %>
+  <% if @bgt < sggs_hash[:hotel_sample_fare].to_i + sggs_hash[:trans_fare].to_i %>
   <div class="hdn">
   <% else %>
   <div>
   <% end %>
-  
-    <span><%= name.inner_text %></span></br>
-    <a>住所：<%= address.inner_text%></a></br>
-    <image src="<%= pictureurl.inner_text%>"></image>
-    <a  >参考価格:<%=sampleratefrom.inner_text%>円</a>
-    <a  >最寄り駅:<%=arr%></a>
-    <a  >移動費:<%=fare%></a>
-    <a  href="<%= detail.inner_text%>">詳細情報</a></br>
+    <span><%= imsggs_hash[:hotel_name] %></span></br>
+    <a>住所：<%= sggs_hash[:address]%></a></br>
+    <image src="<%= sggs_hash[:pict_url] %>"></image>
+    <a  >参考価格:<%=sggs_hash[:hotel_sample_fare] %>円</a>
+    <a  >最寄り駅:<%=sggs_hash[:sta_arrival]%></a>
+    <a  >移動費:<%=sggs_hash[:trans_fare]%>円</a>
+      <a  href="<%=sggs_hash[:detail_url] %>">詳細情報はこちら </a></br>
   </div>
-<% end %>
+<% } %>
+
+
 
 <h2>[Dev]取得したhashテーブル</h2>
 <%=@suggestions%>
 
 <h2>[Dev]TODOs</h2>
 <h3>View + Controllerいじるもの</h3>
-<ul class=todo><span class="todo">TODO:</span>ここから先，予算における交通費－宿泊費比率などを表示する詳細画面が欲しい．</ul>
+<ul class=todo><span class="todo">TODO:</spa>ここから先，予算における交通費－宿泊費比率などを表示する詳細画面が欲しい．</ul>
 <ul class=todo><span class="todo">TODO:</span>他の温泉地もランダムに検索クエリに入れたい</ul>
 <ul class=todo><span class="todo">TODO:</span>検索結果に温泉地属性も入れたい</ul>
 <h3>Viewのみ</h3>
