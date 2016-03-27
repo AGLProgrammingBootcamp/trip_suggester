@@ -177,3 +177,62 @@ input[type="range"].custom {
         margin-bottom: 2px;
     }
 }
+
+
+#hotel-box{
+width:750px;
+height: 220px;
+padding:20px;
+margin: 20px;
+}
+
+#hotel-image-box{
+width:250px;
+height: 200px;
+float:left;
+}
+
+#hotel-lists{
+width:450px;
+height: 250px;
+float:right;
+}
+.hotel-name{
+font-size: 22px;
+height: 20px;
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
+.hotel-address{
+font-size: 15px;
+height: 15px;
+width: auto;
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
+
+.hotel-sample-fare{
+font-size: 18px;
+/*height: 15px;*/
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
+.hotel-arrival{
+font-size: 18px;
+width: auto;
+/*height: 15px;*/
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
+.hotel-trans-fare{
+font-size: 18px;
+/*height: 15px;*/
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
+.hotel-detail-url{
+font-size: 18px;
+/*height: 15px;*/
+/*padding-top: 40px;
+padding-bottom: 40px;*/
+}
