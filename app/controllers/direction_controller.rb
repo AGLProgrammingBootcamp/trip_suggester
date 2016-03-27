@@ -170,11 +170,36 @@ puts "Result price was #{@elements[0].inner_text}."
         @move_fares << @fare_return
       end
       
+      
+
       @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_prefecture,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,prefecture,pictureurl,sampleratefrom,arr,fare|
           @suggestions.push(hotel_name:name.inner_text,address:address.inner_text, pref:prefecture.inner_text, hotel_sample_fare:sampleratefrom.inner_text, sta_arrival:arr, trans_fare:fare, pict_url:pictureurl.inner_text, detail_url:detail.inner_text)
       puts "@suggestions was created. fare was #{@move_fares}"
       end
+
+      @lon_lat=Array.new()
       
+      @suggestions.each {|sggs_hash| 
+    if @bgt < sggs_hash[:hotel_sample_fare].to_i + sggs_hash[:trans_fare].to_i
+
+    else
+
+        @address_dep=params[:dept]
+        agent1 = Mechanize.new
+        page1 = agent1.get("http://www.geocoding.jp/api/?v=1.1&q="+@address_dep)
+        @elements1=page1
+        @lat1=page1.search('lat').inner_text
+        @lng1=page1.search('lng').inner_text
+        agent2 = Mechanize.new
+        @address_app=sggs_hash[:address]
+        page2 = agent2.get("http://www.geocoding.jp/api/?v=1.1&q="+@address_app)
+        @lat2=page2.search('lat').inner_text
+        @lng2=page2.search('lng').inner_text
+        @lon_lat.push([@lat2.to_f,@lng2.to_f])
+    end
+
+  }
+
       @count_sggs += 2
      puts "search in progress ....count #{@count_sggs}"
     end
