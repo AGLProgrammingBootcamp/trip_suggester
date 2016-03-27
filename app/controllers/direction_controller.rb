@@ -123,6 +123,9 @@ require 'mechanize'
     end
   end
 
+  def graph
+  end
+
 
 
 

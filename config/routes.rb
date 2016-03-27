@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   post '/direction/search' => 'direction#search'
   get '/direction/start' => 'direction#start'
   post '/direction/hotels' => 'direction#hotels'
+  get '/direction/graph' => 'direction#graph'
 
   resources :finders
   resources :onsens

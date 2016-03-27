@@ -1,0 +1,33 @@
+<h1>検索結果</h1>
+
+<h2>候補一覧</h2>
+
+
+
+<script language="javascript" type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="assets/javascripts/jquery.jqplot.min.js"></script>
+<script language="javascript" type="text/javascript" src="assets/javascripts/jqplot.pieRenderer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/jquery.jqplot.min.css" />
+
+<script>
+jQuery( function() {
+    jQuery . jqplot(
+        'jqPlot-sample',
+        [
+            [
+                [ 'Ａ社', 53269 ],
+                [ 'Ｂ社', 78493 ],
+                [ 'Ｃ社', 35996 ],
+                [ 'その他', 10582 ]
+            ]
+        ],
+        {
+            seriesDefaults: {
+                renderer: jQuery . jqplot . PieRenderer
+            },
+        }
+    );
+} );
+</script>
+
+<div id="jqPlot-sample" style="height: 300px; width: 300px;"></div>
