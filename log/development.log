@@ -19754,3 +19754,5 @@ Processing by DirectionController#hotels as HTML
   Rendered direction/hotels.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 5617ms (Views: 34.5ms | ActiveRecord: 0.0ms)
 >>>>>>> master
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
