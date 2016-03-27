@@ -1,4 +1,4 @@
-Suggestions = Struct.new(:hotel_name,:address, :prefcode, :hotel_sample_fare, :sta_arrival, :trans_fare)
+Suggestions = Struct.new(:hotel_name,:address, :pref, :hotel_sample_fare, :sta_arrival, :trans_fare, :pict_url, :detail_url)
 class DirectionController < ApplicationController
 require 'mechanize'
 
@@ -70,7 +70,8 @@ require 'mechanize'
 
 #    @areas = ["011105","020802","040205","071502","080602","080805","091102","141602","220302","380205","440502","460505"]
     #先頭から，登別，十和田湖，秋保，裏磐梯，塩原，奥日光，伊香保，箱根，奥飛騨，道後，別府，指宿
-    @areas = ["220302"]
+#    @arrival = ["登別"]
+    @areas = ["011105","141602","440502"]
     # NG list: 最寄り駅が見つからない??? page2 = nilClassになる　十和田湖020802, 塩原071502, 奥日光080602, 伊香保080805, 
     # // http://www.jalan.net/jalan/doc/jws/data/area.html area-code
 
@@ -79,10 +80,10 @@ require 'mechanize'
    #  (2)それぞれの宿に対し，経路価格を算定
    #  (3)配列suggestionsに構造体@hotel_name.zipをpush
    #  (4)loop (1)-(3) 4回
-#    until @count_sggs == 6
+    until @count_sggs == 6
       @s_area=@areas.sample
       agent = Mechanize.new
-      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=1&xml_ptn=1"
+      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=2&xml_ptn=1"
       page = agent.get(@url)
       @elements = page
   
@@ -129,12 +130,21 @@ require 'mechanize'
       end
       
       @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_prefecture,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares).each do|name,address,detail,prefecture,pictureurl,sampleratefrom,arr,fare|
-          @suggestions.push(hotel_name:name.inner_text,address:address.inner_text, prefcode:prefecture.inner_text, hotel_sample_fare:sampleratefrom.inner_text, sta_arrival:arr, trans_fare:fare)
+          @suggestions.push(hotel_name:name.inner_text,address:address.inner_text, pref:prefecture.inner_text, hotel_sample_fare:sampleratefrom.inner_text, sta_arrival:arr, trans_fare:fare, pict_url:pictureurl.inner_text, detail_url:detail.inner_text)
       end
       
-#      @count_sggs += 2
-#     puts "search in progress ....count #{@count_sggs}"
-#    end
+      case @count_sggs
+      when 0
+        @hotel_zip1 = @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_prefecture,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares)
+      when 2
+        @hotel_zip2 = @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_prefecture,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares)
+      when 4
+        @hotel_zip3 = @hotel_name.zip(@hotel_address,@hotel_detail,@hotel_prefecture,@hotel_pictureurl,@hotel_sampleratefrom,@arrive,@move_fares)
+      end
+      
+      @count_sggs += 2
+     puts "search in progress ....count #{@count_sggs}"
+    end
     
   end
 
