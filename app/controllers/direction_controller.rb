@@ -144,7 +144,7 @@ puts "@arr is #{@arr}"
       @move_fares=Array.new()
 
       agent = Mechanize.new
-      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=1&xml_ptn=1"
+      @url="http://jws.jalan.net/APIAdvance/HotelSearch/V1/?key="+@api_key+"&s_area="+@s_area+"&max_rate="+@max_rate+"&min_rate="+@min_rate+"&count=2&xml_ptn=1"
       page = agent.get(@url)
       @elements = page
   
