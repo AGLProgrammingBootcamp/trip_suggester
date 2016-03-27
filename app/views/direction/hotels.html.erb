@@ -1,9 +1,8 @@
-<h1>検索結果</h1>
 <div id="lon_lat" data-lon-lat-id="<%=@lon_lat%>" style="display:none">
 </div>
 <script type="text/javascript">
   function initialize() {
-  var search_num=6;
+  var search_num=8;
   var lon_max=-90;
   var lng_max=-180;
   var lon_min=90;
@@ -125,44 +124,50 @@
       
   </head>
 <body onload="initialize()">
-   <div class="wrapper">
+
+<div class="wrapper2">
+<h1>検索結果</h1>
+
     <p>ホテルの場所</p>
 
     <div id="map_canvas" style="width:500px; height:300px"></div>
-  </div>
+</div>
   
-<h2>候補一覧 from hash テーブル</h2>
-<%  @suggestions.each {|sggs_hash| %>
- <% if @bgt < sggs_hash[:hotel_sample_fare].to_i + sggs_hash[:trans_fare].to_i %>
- <div class="hdn" id="hotel-box">
- <% else %>
- <div id="hotel-box">
- <% end %>
-   <div id="hotel-image-box">
-     <image class="hotel-image" src="<%= sggs_hash[:pict_url] %>" width="250" height="220"></image>
+  <div class="wrapper2">
+  <h2>候補一覧 from hash テーブル</h2>
+  <%  @suggestions.each {|sggs_hash| %>
+   <% if @bgt < sggs_hash[:hotel_sample_fare].to_i + sggs_hash[:trans_fare].to_i %>
+   <div class="hdn" id="hotel-box">
+   <% else %>
+   <div class="hotel-box wrapper_result">
+   <% end %>
+     <div class="hotel-image-box">
+       <image class="hotel-image" src="<%= sggs_hash[:pict_url] %>" width="250" height="220"></image>
+     </div>
+     <div class="hotel-lists" >
+       <span class="hotel-name"><%= sggs_hash[:hotel_name] %></span></br>
+       <h3 class="hotel-address">住所：<%= sggs_hash[:address]%></h3>
+       <h3 class="hotel-sample-fare" >参考価格:<%=sggs_hash[:hotel_sample_fare] %>円</h3>
+       <h3 class="hotel-arrival" >最寄り駅:<%=sggs_hash[:sta_arrival]%> 移動費:往復<%=sggs_hash[:trans_fare]%>円</h3>
+       <a class="hotel-detail-url" href="<%=sggs_hash[:detail_url] %>">詳細情報はこちら </a>
+     </div>
    </div>
-   <div id="hotel-lists" >
-     <span class="hotel-name"><%= sggs_hash[:hotel_name] %></span></br>
-     <h3 class="hotel-address">住所：<%= sggs_hash[:address]%></h3>
-     <h3 class="hotel-sample-fare" >参考価格:<%=sggs_hash[:hotel_sample_fare] %>円</h3>
-     <h3 class="hotel-arrival" >最寄り駅:<%=sggs_hash[:sta_arrival]%> 移動費:往復<%=sggs_hash[:trans_fare]%>円</h3>
-     <a class="hotel-detail-url" href="<%=sggs_hash[:detail_url] %>">詳細情報はこちら </a>
-   </div>
- </div>
-<% } %>
+  <% } %>
+</div>
 
-
-<h2>[Dev]取得したhashテーブル</h2>
-<%=@suggestions%>
-
-<h2>[Dev]TODOs</h2>
-<h3>View + Controllerいじるもの</h3>
-<ul class=todo><span class="todo">TODO:</spa>ここから先，予算における交通費－宿泊費比率などを表示する詳細画面が欲しい．</ul>
-<ul class=todo><span class="todo">TODO:</span>他の温泉地もランダムに検索クエリに入れたい</ul>
-<ul class=todo><span class="todo">TODO:</span>検索結果に温泉地属性も入れたい</ul>
-<h3>Viewのみ</h3>
-<ul class=todo><span class="todo">TODO:</span>CSSでdiv要素を整列させたい</ul>
-<ul class=todo><span class="todo">TODO:</span>かっこいい画像で見栄えを良くしたい</ul>
-<ul class=todo><span class="todo">TODO:</span>候補一覧の表示を綺麗なグリッドにしたい．</ul>
-
+  <div class="wrapper2 dev">
+  <h2>[Dev]取得したhashテーブル</h2>
+  <%=@suggestions%>
+  
+  <h2>[Dev]TODOs</h2>
+  <h3>View + Controllerいじるもの</h3>
+  <ul class=todo><span class="done">done:</span>ここから先，予算における交通費－宿泊費比率などを表示する詳細画面が欲しい．</ul>
+  <ul class=todo><span class="done">done:</span>他の温泉地もランダムに検索クエリに入れたい</ul>
+  <ul class=todo><span class="todo">TODO:</span>検索結果に温泉地属性も入れたい</ul>
+  <h3>Viewのみ</h3>
+  <ul class=todo><span class="done">done:</span>CSSでdiv要素を整列させたい</ul>
+  <ul class=todo><span class="done">done:</span>かっこいい画像で見栄えを良くしたい</ul>
+  <ul class=todo><span class="todo">TODO:</span>候補一覧の表示を綺麗なグリッドにしたい．</ul>
+</div>
+  
 </body>

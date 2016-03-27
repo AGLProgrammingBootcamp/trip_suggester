@@ -112,7 +112,7 @@ require 'mechanize'
    #  (2)それぞれの宿に対し，経路価格を算定
    #  (3)配列suggestionsに構造体@hotel_name.zipをpush
    #  (4)loop (1)-(3) 4回
-    until @count_sggs == 6
+    until @count_sggs == 8
     
       case @count_sggs
       when 0
