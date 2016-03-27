@@ -7,12 +7,12 @@
   <% else %>
   <div>
   <% end %>
-    <span><%= sggs_hash[:hotel_name] %></span></br>
+    <span><%= imsggs_hash[:hotel_name] %></span></br>
     <a>住所：<%= sggs_hash[:address]%></a></br>
-    <image src=""><%= sggs_hash[:pict_url] %></image>
+    <image src="<%= sggs_hash[:pict_url] %>"></image>
     <a  >参考価格:<%=sggs_hash[:hotel_sample_fare] %>円</a>
     <a  >最寄り駅:<%=sggs_hash[:sta_arrival]%></a>
-    <a  >移動費:<%=sggs_hash[:trans_fare]%></a>
+    <a  >移動費:<%=sggs_hash[:trans_fare]%>円</a>
       <a  href="<%=sggs_hash[:detail_url] %>">詳細情報はこちら </a></br>
   </div>
 <% } %>
