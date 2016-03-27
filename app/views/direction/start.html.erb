@@ -1,4 +1,5 @@
-<h1>Trip Suggestor -全国温泉編- v0.4</h1>
+<div class="wrapper">
+<h1>Trip Suggestor -全国温泉編- v0.6</h1>
 <h2>これはなに?</h2>
 <p>ツアーで決められたルートではなく，自分で気ままにどこかに出かけたい．</p>
 <p>そのためには，やることがたくさん．</p>
@@ -6,15 +7,30 @@
 <p>宿を変えたり，行き先を変えてみたりして，時間ばかりかかります．</p>
 <br>
 <p>Trip Suggestorなら，予算と現在地を入れるだけ．</p>
-<p>あなたの素敵な別府温泉での1泊を予算範囲内で提案します．</p>
+<p>さあ，どんな温泉での1泊2日が見つかるでしょうか?</p>
+</div>
 
-<h2>さあ，入力してみましょう！</h2>
-<%= form_tag direction_hotels_path do %>
-  予算総額<input type="text" class="" name="bgt"></br>
-  出発地<input type="text" class="" name="dept"></br>
-  <input type="submit" value="ok" class="">
-<% end %>
 
-<div class="<% @prog_0 %>">検索スタート!</div>
-<div class="<% @prog_1 %>">2/6完了...</div>
-<div class="<% @prog_2 %>">4/6完了...もう少しです...</div>
+<div class="wrapper">
+    
+<h2>1泊2日の温泉旅行にでかけましょう!</h2>
+
+    <%= form_tag direction_hotels_path do %>
+      
+      <div class="input_dept">出発駅は:<input type="text" class="" name="dept">駅</p></div>
+      <div class="price_now"><span id="bar_val">20000</span>円</div>
+      
+      <div class="input_bgt">
+        <input type="range" name="bgt" id="bright" class="custom" step="100" min="5000" max="100000" value="20000" onchange="changeBarValue(this.value)"/>
+        <span id="bright_bar"></span> 
+      </div>
+      
+      <div class="price">
+        <span class="price_axis_left">最小:5,000円</span>
+        <span class="price_axis_mid">50,000円</span>
+        <span class="price_axis_right">最大:100,000円</span>
+        </div>
+      <div class="submit"> <input type="submit" value="温泉検索スタート！" class="btn_submit"> </div>
+    <% end %>
+
+</div>

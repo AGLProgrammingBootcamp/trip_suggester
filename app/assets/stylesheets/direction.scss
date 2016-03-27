@@ -4,7 +4,10 @@
 
 body{
     color:   #333;
-    background-color:  #ccc;
+    background-image: image-url("onsen.jpg");
+    -moz-background-size: 100% auto;
+    background-size: 100% auto;
+
 }
 
 h1{
@@ -13,7 +16,7 @@ h1{
     margin-top:    15px;
     margin-bottom: 15px;
     margin-left:   0px;
-    margin-right:  200px;
+    margin-right:  30px;
     padding: 15px;
     
 }
@@ -24,7 +27,7 @@ h2{
     margin-top:    15px;
     margin-bottom: 15px;
     margin-left:   0px;
-    margin-right:  500px;
+    margin-right:  50px;
     padding: 15px;
     
 }
@@ -41,10 +44,87 @@ h3{
     
 }
 
+p{
+    margin-left: 20px;
+}
+
+.wrapper{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    padding:40px;
+    margin-left: 12px;
+    margin-right: 120px;
+    margin-top: 40px;
+    padding-right: auto;
+    padding-left:auto;
+}
+
+
 .hdn{
     //display:  none;
     background-color: #ccc;
 }
+
+
+.prog_hdn{
+    display:none;
+}
+
+.prog_apr{
+    color: #666;
+}
+
+.input_dept{
+    margin-top:15px;
+    margin-bottom:30px;
+}
+.price{
+    margin-top:0px;
+    margin-bottom:15px;
+}
+.price_now{
+    margin-left: 150px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+.input_bgt{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.price_axis_left{
+    margin-left: 10px;
+    margin-top:  120px;
+}
+
+.price_axis_mid{
+    margin-left: 100px;
+    margin-top:  120px;
+}
+
+.price_axis_right{
+    margin-left: 120px;
+    margin-top:  120px;
+}
+.btn_submit{
+	width: 180px;
+	height: 38px;
+	background: #003;
+	border: 1px solid #DDD;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #fff;
+	padding: 15px 30px 30px;
+	margin-left: 135px;
+}
+.btn_submit:hover{
+	background: #930;
+}
+
 
 ul.todo{
     color: #339;
@@ -55,4 +135,45 @@ span.todo{
     color: #0aa;
     font-style: italic;
     font-weight: bold;
+}
+
+
+#bright_bar{
+	   -webkit-appearance: none;
+        background: #4ff;
+		border:1;
+		height:10px;
+		max-width: 90%;
+		width:0px;
+		display:block;
+		position:absolute;
+        left:240px;
+        top:0px;
+        margin-top:100px;
+        margin-bottom:15px;
+}
+
+input[type="range"].custom {
+	-webkit-appearance: none;
+	appearance: none;
+	background: rgba(0,120,120,0.5);
+	height: 10px;
+	width: 350px;
+    position:absolute;
+    left: 240px;
+    &:focus {
+	    outline:none;
+    }
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        background: #008ee0;
+        width: 20px;
+        height: 40px;
+        border-radius:10px;
+        cursor:pointer;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        margin-bottom: 2px;
+    }
 }
